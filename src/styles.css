@@ -3,7 +3,7 @@ a{
   color:#ad140c;
 }
 .bg-light {
-background-color: yellow!important;
+background-color: #ffffff!important;
 }
   .justify-content-end{
     margin-left: inherit;
@@ -75,6 +75,7 @@ hr.rounded {
 .ico{
   margin: 15px;
   padding-top: 10px;
+  background-color: #ad140c;
 }
 .text{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -111,4 +112,13 @@ hr.rounded {
 .mr-auto{
   margin-left: 4em;
 }
-  
+.delan{
+  position: relative;
+}
+.carousel-inner{
+  position: absolute;
+}
+.icos{
+  margin: 15px;
+  padding-top: 10px;
+}

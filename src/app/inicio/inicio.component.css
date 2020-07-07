@@ -1,7 +1,18 @@
-.imgg{
-    border-radius: 150px;
-    margin-left: 10%;
-    margin-right: 5%;
-    height: 350px;
-    width: 350px;
+h3{
+color:black;
+font-size: 40px;
+background-color: #ad140c;
+}
+h6{
+    
+color:black;
+font-size: 25px;
+font-weight: 700;
+background-color: #ad140c;
+}
+h5{
+background-color: #ad140c;
+color:black;
+font-size: 20px;
+font-weight: 700;
 }
