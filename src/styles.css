@@ -1,0 +1,114 @@
+/* You can add global styles to this file, and also import other style files */
+a{
+  color:#ad140c;
+}
+.bg-light {
+background-color: yellow!important;
+}
+  .justify-content-end{
+    margin-left: inherit;
+  }
+ .float-right{
+    margin-right: 450px;
+  }
+ body{
+    text-align: center;
+  }
+h1{
+    display: inline-block;
+    position: relative;
+    color: #212529;
+    font-family: cursive;
+    padding: 20px;
+}
+.h1{
+    content:'';
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background-color:currentColor;
+    top: 1.1em;
+}
+.media{
+ padding-top: 50px;
+}
+.media-body{
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 4em;
+}
+
+hr.rounded {
+    border-top: 5px solid #A6A103;;
+    border-radius: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .nav-link{
+    padding: .5rem 2rem;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .btn-primary{
+    background-color:#ad140c;
+    border-color: #ad140c;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .btn-primary:hover{
+    background-color:#A6A103;
+    border-color: #A6A103;
+  }
+  a:hover{
+    color:#A6A103;
+  }
+  .imgRedonda {
+    width:360px;
+    height:360px;
+    border-radius:150px;
+}
+
+.section.section-components.section-dark{
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+.ico{
+  margin: 15px;
+  padding-top: 10px;
+}
+.text{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.title{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.info-title{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.ftext{
+  float: right;
+  margin: 3em;
+  padding-right: 8em;
+  padding-left: 8em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.footer{
+  float: left;
+  margin: 1em;
+  padding-left: 7em;
+}
+.footicon{
+  margin-left: 5em;
+}
+.btn{
+  margin-left: 2em;
+}
+.copy{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 3rem;
+  float: left;
+}
+.mr-auto{
+  margin-left: 4em;
+}
+  
