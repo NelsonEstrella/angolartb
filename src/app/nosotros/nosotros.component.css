@@ -1,0 +1,197 @@
+.carousel-inner{
+    position: absolute;
+    width: 67%;
+    margin-left: 30px;
+  }
+.carousel-control-next {
+right: 400px;  
+top: 250px;
+}
+.carousel-indicators{
+    top: 500px;
+    right: 400px;
+    
+}
+.mr-auto{
+    max-width: 28%;
+    margin-left: 17em;
+    background-color: #ad140c;
+    height: 500px;
+}
+.section.section-components.section-dark{
+    margin-top: 0px;
+}
+.carousel-control-prev {
+top: 250px;
+
+}
+.section.section-components.section-dark{
+    margin-right: 20px;
+}
+h2{
+    font-size: 3rem;
+    margin-top: 26rem;
+}
+.carousel-control-next-icon{
+    background-color: black;
+}
+.carousel-control-prev-icon{
+    background-color: black;
+}
+.carousel-indicators li {
+    background-color: black;
+    width: 30px;
+    height: 8px;
+}
+.galley{
+    margin: 1rem;
+    border: 1px solid #ddd; /* Gray border */
+    border-radius: 4px;  /* Rounded border */
+    padding: 5px; /* Some padding */
+    width: 400px; /* Set a small width */
+  height: auto;
+  
+}
+.title{
+    color:white;
+}
+.overlay {
+    position: absolute; 
+    bottom: 50px; 
+    background: rgb(133, 5, 5);
+    background: rgba(196, 22, 22, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    left: 60px;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  .containerr:hover .overlay {
+    opacity: 1;
+
+  }
+  .containerr {
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+    left: 50px;
+  }
+  .containerr1 {
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+    left: 460px;
+    bottom: 360px;
+  }
+  .galley1{
+    margin: 1rem;
+    border: 1px solid #ddd; /* Gray border */
+    border-radius: 4px;  /* Rounded border */
+    padding: 5px; /* Some padding */
+    width: 400px; /* Set a small width */
+  height: auto;
+  right: 0px;
+  
+}
+.containerr1:hover .overlay {
+    opacity: 1;
+
+}
+.containerr2 {
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+    left: 870px;
+    bottom: 700px;
+  }
+  .galley2{
+    margin: 1rem;
+    border: 1px solid #ddd; /* Gray border */
+    border-radius: 4px;  /* Rounded border */
+    padding: 5px; /* Some padding */
+    width: 400px; /* Set a small width */
+  height: auto;
+  right: 0px;
+  
+}
+.containerr2:hover .overlay {
+    opacity: 1;
+
+}
+.containerr3 {
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+    bottom: 720px;
+    left: 50px;
+  }
+  .galley3{
+    margin: 1rem;
+    border: 1px solid #ddd; /* Gray border */
+    border-radius: 4px;  /* Rounded border */
+    padding: 5px; /* Some padding */
+    width: 400px; /* Set a small width */
+  height: auto;
+  right: 0px;
+  
+}
+.containerr3:hover .overlay {
+    opacity: 1;
+
+  }
+  .containerr4 {
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+    bottom: 1055px;
+    left: 460px;
+  }
+  .galley4{
+    margin: 1rem;
+    border: 1px solid #ddd; /* Gray border */
+    border-radius: 4px;  /* Rounded border */
+    padding: 5px; /* Some padding */
+    width: 400px; /* Set a small width */
+  height: auto;
+  right: 0px;
+  
+}
+.containerr4:hover .overlay {
+    opacity: 1;
+
+  }
+.containerr5 {
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+    left: 870px;
+    bottom: 1390px;
+  }
+  .galley5{
+    margin: 1rem;
+    border: 1px solid #ddd; /* Gray border */
+    border-radius: 4px;  /* Rounded border */
+    padding: 5px; /* Some padding */
+    width: 400px; /* Set a small width */
+  height: auto;
+  right: 0px;
+  
+}
+.containerr5:hover .overlay {
+    opacity: 1;
+
+}
+.h22{
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.col-md-6{
+  max-width: 100%;
+}
+p{
+  margin-bottom: 2rem;
+}

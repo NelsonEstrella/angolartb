@@ -1,0 +1,61 @@
+.carousel-inner{
+    position: absolute;
+    width: 67%;
+    margin-left: 30px;
+  }
+.carousel-control-next {
+right: 400px;  
+top: 250px;
+}
+.carousel-indicators{
+    top: 500px;
+    right: 400px;
+    
+}
+.mr-auto{
+    max-width: 28%;
+    margin-left: 17em;
+    background-color: #ad140c;
+    height: 500px;
+}
+.section.section-components.section-dark{
+    margin-top: 0px;
+}
+.carousel-control-prev {
+top: 250px;
+
+}
+.section.section-components.section-dark{
+    margin-right: 20px;
+}
+h2{
+    font-size: 3rem;
+    margin-top: 26rem;
+}
+.carousel-control-next-icon{
+    background-color: black;
+}
+.carousel-control-prev-icon{
+    background-color: black;
+}
+.carousel-indicators li {
+    background-color: black;
+    width: 30px;
+    height: 8px;
+}
+.text-uppercase{
+    margin-top: 2rem;
+}
+h3{
+    margin-bottom: 3rem;
+}
+textarea.form-control {
+    height: 150px;
+}
+.text-uppercase{
+margin-top: 0rem;
+margin-bottom: 1rem;
+}
+.mb-5, .my-5{
+    margin-bottom: 1rem!important;
+}

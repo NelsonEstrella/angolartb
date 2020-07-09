@@ -1,18 +1,26 @@
 h3{
 color:black;
 font-size: 40px;
-background-color: #ad140c;
 }
 h6{
     
 color:black;
 font-size: 25px;
 font-weight: 700;
-background-color: #ad140c;
 }
 h5{
-background-color: #ad140c;
 color:black;
 font-size: 20px;
 font-weight: 700;
+}
+.carousel-inner{
+    width: 60%;
+    margin-left: 30px;
+}
+.mr-auto {
+    margin-left: 11em;
+}
+
+.section.section-components.section-dark{
+    margin-right: 20px;
 }
