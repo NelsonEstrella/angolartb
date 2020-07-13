@@ -38,3 +38,27 @@
       </div>
     </div>
   </div>
+<div class="container mt-2">
+  <div class="row">
+    <div class="cold-sm">
+      <ul class="list-group" style="width: 1000px;">
+        <li *ngFor="let habitacion of this.habitaciones" class="list-group-item">
+          <div class="titlest"> {{ habitacion.tipo }} </div>  
+            <img class="imghabi" src="assets/portada1.jpg" width="300px" height="250px">
+          
+          
+          <h4 class="titles">HUESPEDES PERMITIDOS:  {{ habitacion.numero_huespedes }} </h4>
+           <h4 class="titles">CUENTA CON:</h4>
+           <p>TV</p>
+          <p>BAÑO PRIVADO</p>
+          <p>AGUA CALIENTE</p>
+          <div class="text-right">
+            <a class="btn btn-primary xd" routerLink="inicio">RESERVA</a>
+          </div>
+
+
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -46,3 +46,14 @@ h2{
 .title{
     color:white;
 }
+.titlest{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    float: right;
+    font-size: 30px;
+}
+.imghabi{
+    float: left;
+}
+h4{
+    
+}
