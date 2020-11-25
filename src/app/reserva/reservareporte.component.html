@@ -1,0 +1,30 @@
+<div class="imgno">
+    <img src="assets/logo.png" width="200px" height="100px">
+</div>
+<div class="p-3">
+    <button onclick="window.print();"  class="no-printable btn btn-primary">IMPRIMIR</button>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>DNI</th>
+            <th>NOMBRES</th>
+            <th>APELLIDOS</th>
+            <th>HABITACION</th>
+            <th>INGRESO</th>
+            <th>SALIDA</th>
+            <th>MONTO A PAGAR</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let reporte of this.reportes">
+            <td>{{reporte.dni}}</td>
+            <td>{{reporte.Nombres}}</td>
+            <td>{{reporte.Apellidos}}</td>
+            <td>{{reporte.Habitacion}}</td>
+            <td>{{reporte.fecha_ingreso}}</td>
+            <td>{{reporte.fecha_salida}}</td>
+            <td>{{reporte.monto_total}}</td>
+        </tr>
+    </tbody>
+</table>

@@ -25,7 +25,6 @@
     </a>
   </div>
   
-
   <div class="section section-components section-dark">
     <div class="row">
       <div class="col-md-12 col-lg-6">
@@ -38,27 +37,52 @@
       </div>
     </div>
   </div>
-<div class="container mt-2">
+  <hr class="rounded">
+  <h5>Use el logo del calendario y seleccione la fecha de ingreso y fecha de salida para poder mostrarle las habitaciones disponibles </h5>
+  <hr class="rounded">
+<div class="container mt-12">
   <div class="row">
     <div class="cold-sm">
-      <ul class="list-group" style="width: 1000px;">
-        <li *ngFor="let habitacion of this.habitaciones" class="list-group-item">
-          <div class="titlest"> {{ habitacion.tipo }} </div>  
-            <img class="imghabi" src="assets/portada1.jpg" width="300px" height="250px">
+      <ul class="list-group" >
+        <form  [formGroup]="formDisponible"
+        (submit)="onSubmit()">
+          Ingreso:
+        <div class="form-group">
+          <input type="date" formControlName="fecha_ingreso"  class="form-control">
+        </div>
           
-          
-          <h4 class="titles">HUESPEDES PERMITIDOS:  {{ habitacion.numero_huespedes }} </h4>
-           <h4 class="titles">CUENTA CON:</h4>
-           <p>TV</p>
-          <p>BAÑO PRIVADO</p>
-          <p>AGUA CALIENTE</p>
-          <div class="text-right">
-            <a class="btn btn-primary xd" routerLink="inicio">RESERVA</a>
-          </div>
-
-
-        </li>
+          Salida:
+          <div class="form-group">
+          <input type="date" formControlName="fecha_salida"   class="form-control">
+        </div>
+          <br>
+          <div class="form-group">
+          <button class="btn btn-primary" type="submit">
+            DISPONIBILIDAD
+          </button>
+        </div>
+        </form>
       </ul>
     </div>
   </div>
 </div>
+<div>        <li *ngFor="let habitacion of this.habitaciones" class="list-group-item" style="width: 1000px;">
+          <div class="titlest" > {{ habitacion.precio }} </div>
+          <div class="titlest" > {{ habitacion.tipo }} </div>    
+            <img class="imghabi" src="assets/portada1.jpg" width="300px" height="250px">
+          
+          
+          <h4 class="titles">HUESPEDES PERMITIDOS: {{habitacion.numero_huespedes}}  </h4>
+           <h4 class="titles">CUENTA CON:</h4>
+          <p>TV</p>
+          <p>BAÑO PRIVADO</p>
+          <p>AGUA CALIENTE</p>
+          <div class="text-right">
+            <a class="btn btn-primary" [routerLink] ="['/reserva', habitacion.id, formDisponible.value.fecha_ingreso,formDisponible.value.fecha_salida]">RESERVAR</a>
+          </div>
+        </li>
+      </div>
+
+        <hr class="rounded">
+
+     

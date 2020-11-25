@@ -12,6 +12,8 @@ import { HabitacionComponent } from './habitacion/habitacion.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { ContactenosComponent } from './contactenos/contactenos.component';
 import { ReservaComponent } from './reserva/reserva.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ReservareporteComponent } from './reserva/reservareporte.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +24,16 @@ import { ReservaComponent } from './reserva/reserva.component';
     HabitacionComponent,
     NosotrosComponent,
     ContactenosComponent,
-    ReservaComponent
+    ReservaComponent,
+    ReservareporteComponent
   ],
+  
   imports: [
     BrowserModule,
     AppRoutingModule,
      HttpClientModule, FormsModule,
-     ReactiveFormsModule
+     ReactiveFormsModule,
+     NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

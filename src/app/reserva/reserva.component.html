@@ -1,1 +1,166 @@
-<p>reserva works!</p>
+<div class="noaparecer">
+<hr class="rounded">
+<h2>REGISTRA TU RESERVA</h2>
+<hr class="rounded">
+<div class="reservs" >
+<form [formGroup]="formReservar"
+(submit)="onPost()">  
+<div class="form-group">
+  <label for="nombre">Fecha Ingreso</label>
+  <input type="text"   disabled="disable" class="form-control" formControlName="fecha_ingreso">
+</div>  
+  <div class="form-group">
+  <label for="nombre">Fecha Salida</label>
+  <input type="text"  disabled="disable" class="form-control" formControlName="fecha_salida">
+</div> 
+  <div class="form-group">
+    <label for="habitacion">Tipo</label>
+    <input type="text"   disabled="disable"  class="form-control"  aria-describedby="emailHelp" value="{{habitacion.tipo}}">
+    <input type="hidden"  class="form-control" formControlName="habitacion" aria-describedby="emailHelp" [(ngModel)]="habitacion.id">
+  </div>
+  <div class="form-group">
+    <label for="habitacion">Precio en S/.</label>
+    <input type="text"  disabled="disable"  class="form-control" aria-describedby="emailHelp" value="{{habitacion.precio}}">
+  </div>
+  <div class="form-group">
+    <label for="nombre">Dias de estadia</label>
+    <input type="text"  disabled="disable"  class="form-control" value="{{dias}}">
+  </div> 
+  <div class="form-group">
+    <label for="nombre">Monto a Pagar en S/.</label>
+    <input type="hidden"  class="form-control" formControlName="monto_total" aria-describedby="nombreHelp" [(ngModel)]="monto">
+    <input type="text"  disabled="disable" class="form-control" aria-describedby="nombreHelp" value="{{monto}}">   
+  </div> 
+  <div class="form-group">
+    <label for="nombre">DNI</label>
+    <input type="text"  class="form-control" formControlName="dni" aria-describedby="nombreHelp" maxlength="8">
+  </div> 
+  <div class="form-group">
+    <label for="nombre">Nombres</label>
+    <input type="text"   class="form-control" formControlName="primer_nombre" aria-describedby="nombreHelp">
+  </div> 
+  <div class="form-group">
+    <label for="apellido">Apellidos</label>
+    <input type="text"  class="form-control" formControlName="segundo_nombre" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Correo Electronico: ejemplo@gmail, ejemplo@hotmail, etc</label>
+    <input type="email" class="form-control" formControlName="correo" placeholder="name@example.com">
+  </div>
+  <div class="form-group">
+    <label for="celular">N° Celular</label>
+    <input type="string" class="form-control"  formControlName="numero_celular" aria-describedby="emailHelp" maxlength="9">
+  </div>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">PAGAR</button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">MI RESERVA</button>
+  <div class="modal fade" id="modal1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5> Porfavor escanee el codigo QR</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            &times;
+          </button>
+        </div>
+        <div>
+          <img src="assets/yape.png"  width="100px" height="100px">
+          <img src="assets/codigo-qr.jpg" width="300px" height="300px">
+        </div>
+        <div> 
+          <p><h6> Paga con YAPE, mas seguro, sin contacto fisico con el dinero. </h6> 
+          <p><h6> Para poder confirmar su reserva porfavor haga una transaccion del 50% del Monto total a pagar.  </h6>
+            <label for="nombre">Monto total a pagar</label>
+            <div type="text"  class="form-control" aria-describedby="nombreHelp"> S/. {{monto}}.00 </div> 
+            <label for="nombre">50% del Monto total a pagar</label>
+            <div type="text"  class="form-control" aria-describedby="nombreHelp"> S/. {{confirmar}}.00 </div> 
+        </div>
+        <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">RESERVAR</button>
+      </div>
+      </div>
+    </div>
+  </div>
+</form>
+  <hr class="rounded">
+  <h5>Use el logo del calendario y seleccione la fecha de ingreso y fecha de salida para poder mostrarle las habitaciones disponibles</h5>
+  <hr class="rounded">
+<h5>Si decide cambiar las fechas de su estadia, porfavor vuelve a ingresar las fechas de ingreso y salida</h5>
+<hr class="rounded">
+  <div class="form-group">
+    <div class="container mt-2">
+      <div class="row">
+        <div class="cold-sm">
+          <ul class="list-group" >
+            <form  [formGroup]="formDisponible"
+            (submit)="onSubmit()">
+              Ingreso:
+            <div class="form-group">
+              <input type="date" formControlName="fecha_ingreso"  class="form-control"> 
+            </div>
+              
+              Salida:
+              <div class="form-group">
+              <input type="date" formControlName="fecha_salida"   class="form-control"> 
+            </div>
+              <div class="form-group">
+              <button class="btn btn-primary" type="submit">
+                BUSCAR HABITACION
+              </button>
+            </div>
+            </form>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+</div>
+<div>
+<li *ngFor="let habitacion of this.habitaciones" class="list-group-item">
+  <div class="titlest" > {{ habitacion.tipo }} </div>  
+    <img class="imghabi" src="assets/portada1.jpg" width="300px" height="250px">  
+  <h4 class="titles">HUESPEDES PERMITIDOS:  {{ habitacion.numero_huespedes }} </h4>
+   <h4 class="titles">CUENTA CON:</h4>
+  <p>TV</p>
+  <p>BAÑO PRIVADO</p>
+  <p>AGUA CALIENTE</p>
+  <div class="text-right">
+    <a class="btn btn-primary" [routerLink] ="['/reserva', habitacion.id, formDisponible.value.fecha_ingreso,formDisponible.value.fecha_salida]">RESERVAR</a>
+  </div>
+</li>
+</div>
+<hr class="rounded">
+</div>
+<div class="modal fade" id="modal2">
+  <div class="imgno">
+    <img src="assets/logo.png" width="200px" height="100px">
+  </div>
+  <div class="modal-dialog">
+    <div class="modal-content" style="width: 900px; right:160px;">
+    <div class="p-3">
+      <button onclick="window.print();"  class="no-printable btn btn-primary">IMPRIMIR</button>
+  </div>
+  <table class="table">
+      <thead>
+          <tr>
+              <th>DNI</th>
+              <th>NOMBRES</th>
+              <th>APELLIDOS</th>
+              <th>HABITACION</th>
+              <th>INGRESO</th>
+              <th>SALIDA</th>
+              <th>MONTO A PAGAR</th>
+          </tr>
+      </thead>
+      <tbody>
+              <td>{{dni}}</td>
+              <td>{{nombre}}</td>
+              <td>{{apellido}}</td>
+              <td>{{habitacion.tipo}}</td>
+              <td>{{fechaingreso}}</td>
+              <td>{{fechasalida}}</td>
+              <td>{{monto}}</td>
+      </tbody>
+  </table>
+  </div>
+  </div>
+</div>

@@ -6,17 +6,12 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 @Injectable ({ 
     providedIn: 'root'
 })
- export class HabitacionService {
+ export class ReporteService {
     api = "https://127.0.0.1:8000/";
     constructor(private http: HttpClient) {
 
     }
-    index () {
-        return this.http.get(this.api + "api/auth/habitacions")
+    reporte () {
+        return this.http.get(this.api + "api/auth/ordendetalles/reservas")
     }   
-    show (id:number) {
-        return this.http.get(this.api + "api/auth/habitacions/" + id, {});
-    }
-    showBetweenDates(){
-    }
  }

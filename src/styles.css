@@ -8,9 +8,7 @@ background-color: #ffffff!important;
   .justify-content-end{
     margin-left: inherit;
   }
- .float-right{
-    margin-right: 450px;
-  }
+
  body{
     text-align: center;
   }
@@ -32,11 +30,7 @@ h1{
 .media{
  padding-top: 50px;
 }
-.media-body{
-    margin-left: 10%;
-    margin-right: 10%;
-    line-height: 4em;
-}
+
 
 hr.rounded {
     border-top: 5px solid #A6A103;;
@@ -121,3 +115,22 @@ hr.rounded {
   margin: 15px;
   padding-top: 10px;
 }
+@media print {
+  .no-printable {
+      display: none;
+   }
+   .delan {
+     display: none;
+   }
+   .noaparecer {
+     display: none;
+   }
+   .imgno {
+     display: block!important;
+   }
+  }
+
+.imgno {
+    display: none;
+  }
+
